@@ -1,10 +1,10 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM, GPT2LMHeadModel
 
 tokenizer = AutoTokenizer.from_pretrained("gpt2")
-# model = AutoModelForCausalLM.from_pretrained("gpt2")
-model = GPT2LMHeadModel.from_pretrained("./gpt2_model")
+# model   = AutoModelForCausalLM.from_pretrained("gpt2")
+model     = GPT2LMHeadModel.from_pretrained("./gpt2_model")
 
-prompt = "Once upon a time, in a land far far away,"
+prompt    = "Once upon a time, in a land far far away,"
 input_ids = tokenizer(prompt, return_tensors="pt").input_ids
 
 num_words = 200  
