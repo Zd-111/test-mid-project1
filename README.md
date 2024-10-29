@@ -1,6 +1,6 @@
 # mid-term-work
 
-使用gpt2的模型，生成一小段文字。
+使用gpt2模型，生成一小段文字。
 
 input.txt中存放训练的数据集
 
